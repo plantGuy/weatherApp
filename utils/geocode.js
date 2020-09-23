@@ -1,9 +1,7 @@
 const request = require("postman-request");
-
 const APIAccessKeyGC =
   "pk.eyJ1IjoibG1tNm4iLCJhIjoiY2tjNHZpZHI1MDZ4MDJ4bjFxdGllMWRmbSJ9.8XMbmcU9LP0hUDwd4-K68Q";
 var urlGeocode = "https://api.mapbox.com/geocoding/v5/mapbox.places/";
-
 const getLocation = (searchStr, callback) => {
   //const searchStr = 'Crozet'
 
