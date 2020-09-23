@@ -3,7 +3,7 @@ const path = require("path");
 const express = require("express");
 const hbs = require("hbs");
 const { registerHelper } = require("hbs");
-
+const port = process.env.PORT || 3000;
 const app = express();
 
 console.log(__dirname);
@@ -92,6 +92,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("server started on port 3000");
+app.listen(port, () => {
+  console.log(`server started on port ${port}`);
 });
