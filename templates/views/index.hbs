@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="./css/style.css" />
+
+<html>
+
+<head>
+    <link rel='icon' href="./img/weather.png">
+    <title>{{title}}</title>
+</head>
+
+<body>
+    <div class='main'>
+        {{>header}}
+        <h2>a page for {{name}}</h2>
+        <form>
+            <input id='location' type='text' placeholder="location">
+            <button>Search</button>
+        </form>
+        <p id='city'></p>
+        <p id='results'></p>
+        <P id='error'></P>
+
+        <img class='.portrait' src=".//img/Cute.jpg" />
+    </div>
+    {{>footer}}
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
